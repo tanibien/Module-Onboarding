@@ -13,15 +13,79 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label for="customer-name">Name:</label>
+          <input 
+            type="text" 
+            id="customer-name" 
+            name="customer-name" 
+            minlength="2" 
+            required 
+          />
+
+          <label for="customer-email">Email:</label>
+          <input 
+            type="email" 
+            id="customer-email" 
+            name="customer-email" 
+            required 
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose a Colour</legend>
+
+          <label for="colour-red">
+            <input type="radio" id="colour-red" name="colour" value="red" required />
+            Red
+          </label>
+
+          <label for="colour-blue">
+            <input type="radio" id="colour-blue" name="colour" value="blue" required />
+            Blue
+          </label>
+
+          <label for="colour-black">
+            <input type="radio" id="colour-black" name="colour" value="black" required />
+            Black
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose a Size</legend>
+
+          <label for="size-xs">
+            <input type="radio" id="size-xs" name="size" value="XS" required /> XS
+          </label>
+
+          <label for="size-s">
+            <input type="radio" id="size-s" name="size" value="S" required /> S
+          </label>
+
+          <label for="size-m">
+            <input type="radio" id="size-m" name="size" value="M" required /> M
+          </label>
+
+          <label for="size-l">
+            <input type="radio" id="size-l" name="size" value="L" required /> L
+          </label>
+
+          <label for="size-xl">
+            <input type="radio" id="size-xl" name="size" value="XL" required /> XL
+          </label>
+
+          <label for="size-xxl">
+            <input type="radio" id="size-xxl" name="size" value="XXL" required /> XXL
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Tatiana Kuzmina</h2>
     </footer>
   </body>
 </html>
